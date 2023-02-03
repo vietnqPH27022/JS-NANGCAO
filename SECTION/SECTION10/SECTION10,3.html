@@ -1,0 +1,21 @@
+<script>
+    const oneWord=function (str){
+        return str.replace(/ /g,'').toLowerCase();
+    }
+    const uperFirstWord=function(str){
+        const[fist, ...others]=str.split(' ');
+        return [fist.toUpperCase(), ...orthes].join(' ');
+    }
+    const transformer= function(str,fn){
+        console.log('Original string: ',str);
+        console.log('Transformed: ',str);
+        console.log('Tranformed by: ',fn.name);
+    };
+    transformer('JavaScript is the best!',uperFirstWord);
+    transformer('JavaScript is the best!',oneWord);
+    const high5=function(){
+        console.log('high');
+    };
+    document.body.addEventListener('click',high5);
+    ['Jonas','Martha','Adam'].forEach(high5);
+</script>

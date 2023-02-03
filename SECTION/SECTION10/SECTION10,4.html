@@ -1,0 +1,15 @@
+<script>
+    const greet=function(greeting){
+        return function(name){
+            console.log(greeting ,name);
+        }
+    }
+    const greetterHey=greet('hey');
+    greetterHey('Viet');
+    greetterHey('nqv');
+    greet('hello')('jonas');
+
+    const greetArr=greeting=>name=>  console.log(greeting ,name);
+    greetArr('hey')('viet');
+
+</script>

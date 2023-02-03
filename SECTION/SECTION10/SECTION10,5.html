@@ -1,0 +1,24 @@
+<script>
+    const runOnce=function(){
+        console.log('Hello word');
+
+    };
+    runOnce();
+    //funtion gọi ngay lập tức
+    (function(){
+        console.log('Hello word');
+        const isPrivate=23;
+    })();
+
+    // console.log(isPrivate);
+    (()=>console.log('hello viet nam'))
+    ();
+    {
+        //const phạm vi riêng tư
+        const isPrivate=23;
+        //var phamj vi mowr rong
+        var notPrivate=46;
+    }
+    // console.log(isPrivate);
+    console.log(notPrivate);
+</script>
